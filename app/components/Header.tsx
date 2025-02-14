@@ -11,11 +11,11 @@ export default function Header() {
   const toggleMenu = () => setIsOpen(!isOpen);
 
   return (
-    <header className="fixed top-0 left-0 right-0 bg-black bg-opacity-80 shadow z-10">
+    <header className="fixed top-0 left-0 right-0 bg-black bg-opacity-30 shadow z-10">
       <div className="container mx-auto px-4 py-4">
         <div className="flex justify-between items-center">
           <Link
-            href="/"
+            href="/#"
             className="text-2xl font-bold text-gray-800 hover:text-gray-600 transition duration-300"
           >
             <Image
@@ -38,7 +38,7 @@ export default function Header() {
             <ul className="flex space-x-4">
               <li>
                 <Link
-                  href="#about"
+                  href="#home"
                   className="text-white hover:text-alin-gold hover:shadow-lg transition duration-300 p-2 rounded"
                 >
                   Home
@@ -46,7 +46,7 @@ export default function Header() {
               </li>
               <li>
                 <Link
-                  href="#skills"
+                  href="#services"
                   className="text-white hover:text-alin-gold hover:shadow-lg transition duration-300 p-2 rounded"
                 >
                   Services
@@ -54,7 +54,7 @@ export default function Header() {
               </li>
               <li>
                 <Link
-                  href="#projects"
+                  href="#contact"
                   className="text-white hover:text-alin-gold hover:shadow-lg transition duration-300 p-2 rounded"
                 >
                   Contact

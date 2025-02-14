@@ -1,7 +1,7 @@
-import Header from "./components/Header";
-import Logo from "./components/Logo";
+import Header from "../components/Header";
+import Link from "next/link";
 
-export default function Home() {
+export default function ExpressPage() {
   return (
     <div 
       className="relative min-h-screen"
@@ -15,12 +15,17 @@ export default function Home() {
       <div className="absolute inset-0 bg-black bg-opacity-50">
         <div className="relative grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
           <Header />
-          <main className="flex flex-col gap-12 row-start-2 items-center">
-            <h1 className="text-5xl font-bold text-white">ALiN Group of Companies</h1>
-            <Logo />
+          <main className="flex flex-col gap-8 row-start-2 items-center">
+            <Link href="/">
+              <button className="bg-alin-gold hover:bg-alin-gold-dark text-white font-bold py-2 px-4 rounded transition-colors duration-300">
+                Back to Home
+              </button>
+            </Link>
+            <h1 className="text-4xl font-bold text-white">Alin Express Office</h1>
+            {/* Add express specific content here */}
           </main>
         </div>
       </div>
     </div>
-  );  
+  );
 }
