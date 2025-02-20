@@ -33,7 +33,6 @@ export default function FooterLinks() {
               </div>
             </div>
           </div>
-          
           <div className="cursor-pointer transform hover:scale-105 transition duration-300">
             <Image
               src="/map.png"
@@ -45,11 +44,10 @@ export default function FooterLinks() {
             />
           </div>
         </div>
-
         <div className="mt-12 pt-8 border-t border-gray-800">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className="text-sm text-gray-400">
-              © {new Date().getFullYear()} ALIN Group of Companies, Inc. All rights reserved
+              {new Date().getFullYear()} ALIN Group of Companies, Inc. All rights reserved
             </p>
             <div className="flex space-x-6 text-sm text-gray-400">
               <Link href="/about" className="hover:text-alin-gold transition">About Us</Link>

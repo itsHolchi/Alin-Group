@@ -12,11 +12,6 @@ export default function Logo() {
   ];
 
   return (
-    // Adjust these classes to control spacing:
-    // gap-20: controls the space between grid items (both vertical and horizontal)
-    // px-8: adds horizontal padding
-    // max-w-7xl: controls the maximum width of the grid
-    // mx-auto: centers the grid horizontally
     <div className="w-full px-8 max-w-7xl mx-auto">
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-32 items-center justify-items-center">
         {logos.map((logo) => (
