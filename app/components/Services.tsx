@@ -25,12 +25,14 @@ const services = [
 
 export default function Services() {
   return (
-    <section id="services" className="pt-4 pb-20 bg-black/50">
+    <section id="services" className="pt-4 pb-20 bg-black text-white ">
       <div className="container mx-auto px-4"> {/*container for the grids*/}
-        <h2 className="text-4xl font-bold text-center mb-16 text-white">Our Services</h2>
+        <h2 className="text-4xl font-bold text-center mb-16">
+          Our Services
+        </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           {services.map((service, index) => (
-            <div key={index} className="flex flex-col items-center text-center group  rounded-lg p-8 transition-all duration-300">
+            <div key={index} className="flex flex-col bg-white/35 hover:bg-white/50 items-center text-center group rounded-lg p-8 transition-all duration-300">
               <div className="relative w-32 h-32 mb-6 rounded-full bg-white/50 p-4 group-hover:bg-alin-gold transition-all duration-300">
                 <Image
                   src={service.image}
@@ -39,8 +41,12 @@ export default function Services() {
                   className="object-contain p-4"
                 />
               </div>
-              <h3 className="text-2xl font-semibold mb-4 text-white">{service.title}</h3>
-              <p className="text-gray-200">{service.description}</p>
+              <h3 className="text-2xl font-semibold mb-4">
+                {service.title}
+              </h3>
+              <p className="text-gray-200">
+                {service.description}
+              </p>
             </div>
           ))}
         </div>

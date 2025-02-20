@@ -24,13 +24,13 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="pt-10 pb-36 bg-black/50">
+    <section id="contact" className="pt-10 pb-36 bg-white">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold text-center mb-24 text-white">Contact Us</h2>
+        <h2 className="text-4xl font-bold text-center mb-24 text-black">Contact Us</h2>
         <div className="max-w-2xl mx-auto">
-          <form onSubmit={handleSubmit} className="space-y-6 bg-white/65 p-10 rounded-3xl">
-            <div>
-              <label htmlFor="fullName" className="block text-black mb-2">Full Name</label>
+          <form onSubmit={handleSubmit} className="space-y-6 bg-black p-10 rounded-3xl">
+            <div >
+              <label htmlFor="fullName" className="block text-white mb-2">Full Name</label>
               <input
                 type="text"
                 id="fullName"
@@ -43,7 +43,7 @@ export default function Contact() {
               />
             </div>
             <div>
-              <label htmlFor="email" className="block text-black mb-2">Email Address</label>
+              <label htmlFor="email" className="block text-white mb-2">Email Address</label>
               <input
                 type="email"
                 id="email"
@@ -56,7 +56,7 @@ export default function Contact() {
               />
             </div>
             <div>
-              <label htmlFor="message" className="block text-black mb-2 bold">Message</label>
+              <label htmlFor="message" className="block text-white mb-2 bold">Message</label>
               <textarea
                 id="message"
                 name="message"
@@ -70,7 +70,7 @@ export default function Contact() {
             <div>
               <button
                 type="submit"
-                className="w-full py-3 px-6 bg-alin-gold text-black font-semibold rounded-lg hover:bg-opacity-90 transition-all duration-300"
+                className="w-full py-3 px-6 bg-alin-gold text-black font-semibold rounded-lg hover:bg-opacity-90 transition-all duration-300 hover:text-alin-gold hover:bg-white"
               >
                 Send Message
               </button>
