@@ -2,6 +2,7 @@ import Header from "./components/Header";
 import Logo from "./components/Logo";
 import Services from "./components/Services";
 import Contact from "./components/Contact";
+import FooterLinks from "./components/FooterLinks";
 
 export default function Home() {
   return (
@@ -28,6 +29,7 @@ export default function Home() {
         </section>
         <Services />
         <Contact />
+        <FooterLinks />
       </main>
     </div>
   );  

@@ -36,7 +36,7 @@ export default function Header() {
   const getLinkClass = (section: string) => {
     return `text-white transition duration-300 p-2 rounded ${
       activeSection === section 
-        ? 'text-alin-gold font-semibold border-b-2 border-alin-gold'
+        ? 'font-semibold border-b-2 border-alin-gold text-alin-gold'
         : 'hover:text-alin-gold hover:border-b-2 hover:border-alin-gold'
     }`;
   };
